@@ -1,49 +1,54 @@
 import React from "react";
-import styles from "./header.css";
-import colors from "../../utils/colors.js";
-import { Container, Row, Col } from "react-bootstrap";
-import code_brackets from "./code_brackets.png";
-import grad_cap from "./grad_cap.png";
-import person from "./person.png";
+import { Row, Col } from "react-bootstrap";
+import children from "./children.jpg";
 
-function header() {
-  function imageWithText(text, image) {
-    return (
-      <Col className="my-auto text-center">
-        <Row className="my-auto justify-content-center">
-          <img src={image} alt="..." className="mw-50"></img>
-        </Row>
-        <Row>
-          <p className={styles.description}>{text}</p>
-        </Row>
-      </Col>
-    );
-  }
-  const divStyle = {
-    color: colors.font,
-    backgroundColor: colors.secondary,
+function Header() {
+  const chidrenstyle = {
+    width: "90%",
+    justifyContent: "right",
+    alignItems: "center",
+  };
+
+  const titlestyle = {
+    fontSize: "3.2rem",
+    fontWeight: "bold",
+    lineHeight: "1.2em"
+  };
+
+  const descstyle = {
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginBottom: "3rem",
+  };
+
+  const leftbutton = {
+    marginRight: "3rem",
   };
 
   return (
-    <div style={divStyle}>
-      <Container fluid className="align-middle">
-        <Row>
-          {imageWithText(
-            "Only 18 states have created K-8 computer science standards. Momentum is building, but we still have a long way to go.",
-            grad_cap
-          )}
-          {imageWithText(
-            "Women who try computer science in high school are 10x more likely to major in it, and Black and Latinx students are 7x more likely.",
-            person
-          )}
-          {imageWithText(
-            "Every 21st century student deserves the opportunity to learn about algorithms, how to make an app, or how the Internet works.",
-            code_brackets
-          )}
-        </Row>
-      </Container>
-    </div>
+    <>
+      <Row>
+        <Col className="px-5 py-5">
+          <br />
+          <p style={titlestyle}>Get your first taste of teaching tech</p>
+          <p style={descstyle}>
+            FirstByte provides educators with the materials and support to teach
+            STEM in their classrooms, regardless of budget or technical
+            background.
+          </p>
+          <button type="button" class="btn btn-primary mx-1" style={leftbutton}>
+            For Students
+          </button>&nbsp;
+          <button type="button" class="btn btn-secondary mx-1">
+            For Educators
+          </button>&nbsp;
+        </Col>
+        <Col className="d-flex" style={{justifyContent: 'right'}}>
+          <img src={children} alt="..." style={chidrenstyle}></img>
+        </Col>
+      </Row>
+    </>
   );
 }
 
-export default header;
+export default Header;

@@ -1,0 +1,22 @@
+.text-logo {
+    color: #699A76 !important;
+}
+
+#navbarText {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    margin: 0px auto;
+}
+
+.nav-item {
+    margin: 0px 10px;
+}

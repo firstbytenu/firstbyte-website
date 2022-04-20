@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #699A76 !important;
+  border-style: none !important;
+  padding: 10px 25px !important;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+  background-color: #F5FAD0 !important;
+  color: dimgray !important;
+  border-style: none !important;
+  padding: 10px 25px !important;
+}

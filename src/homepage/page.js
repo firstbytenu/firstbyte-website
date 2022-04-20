@@ -1,6 +1,9 @@
 import React from "react";
-import Header2 from "./header/header2.js";
-import Header3 from "./header/header3.js";
+import StatsSection from "./header/stats.js";
+import Header from "./header/header.js";
+import FeaturedCurricula from "./featured/FeaturedCurricula.js";
+import Navbar from "../navbar/navbar.js";
+import EmailSection from "./contact/contactsection"
 
 class Homepage extends React.Component {
   state = {};
@@ -10,8 +13,12 @@ class Homepage extends React.Component {
   render() {
     return (
       <>
-        <Header3></Header3>
-        <Header2></Header2>
+        <Navbar />
+        <Header />
+        <StatsSection />
+        <FeaturedCurricula />
+        <EmailSection />
+        <br />
       </>
     );
   }

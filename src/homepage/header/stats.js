@@ -15,13 +15,13 @@ function header() {
   function imageRow(img1, img2, img3) {
     return (
       <Row className="my-auto justify-content-center">
-        <Col className="my-auto text-center">
+        <Col className="my-auto text-center mx-2">
           <img src={img1} alt="..." className="img-fluid"></img>
         </Col>
-        <Col className="my-auto px-5 text-center">
+        <Col className="my-auto px-5 text-center mx-2">
           <img src={img2} alt="..." className="img-fluid"></img>
         </Col>
-        <Col className="my-auto text-center">
+        <Col className="my-auto text-center mx-2">
           <img src={img3} alt="..." className="img-fluid"></img>
         </Col>
       </Row>
@@ -31,13 +31,13 @@ function header() {
   function textRow(text1, text2, text3) {
     return (
       <Row className="my-auto justify-content-center">
-        <Col className="my-auto text-center">
+        <Col className="my-auto text-center mx-2">
           <p className={styles.description}>{text1}</p>
         </Col>
-        <Col className="my-auto px-5 text-center">
+        <Col className="my-auto px-5 text-center mx-2">
           <p className={styles.description}>{text2}</p>
         </Col>
-        <Col className="my-auto text-center">
+        <Col className="my-auto text-center mx-2">
           <p className={styles.description}>{text3}</p>
         </Col>
       </Row>
@@ -46,8 +46,8 @@ function header() {
 
   return (
     <div style={divStyle}>
-      <Container className="mx-auto">
-        <Row>
+      <Container className="mx-auto" style={{margin: '0px 30px'}}>
+        <Row style={{maxWidth: '85%', margin: '0px auto'}}>
           {imageRow(grad_cap, person, code_brackets)}
           {textRow(
             "Only 18 states have created K-8 computer science standards. Momentum is building, but we still have a long way to go.",
