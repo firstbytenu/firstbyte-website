@@ -19,6 +19,7 @@ function header3() {
   const descstyle = {
     fontSize: "1.5rem",
     fontWeight: "bold",
+    marginBottom: "3rem",
   };
 
   const leftbutton = {
