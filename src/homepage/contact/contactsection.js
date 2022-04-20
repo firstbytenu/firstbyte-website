@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import './contactsection.css';
 
 const EmailSection = () => {
     const form = useRef();
@@ -16,22 +17,26 @@ const EmailSection = () => {
         
         return (
             <>
-                <form ref={form} onSubmit={sendEmail}>
+                {/* <form ref={form} onSubmit={sendEmail}>
                     <label>Name</label>
                     <input type="text" name="user_name" />
                     <label>Email</label>
                     <input type="email" name="user_email" />
                     <label>Message</label>
                     <textarea name="message" />
-                    <input type="submit" value="Send" />
-                </form>
-                <div>
-                    Get In Touch!
-                    Email address: teachfirstbyte@gmail.com
+                    <input type="submit" value="Send" className="btn-primary"/>
+                </form> */}
+                <div className="bottom-bar">
+                    <div>
+                        Get in touch!
+                        Email address: teachfirstbyte@gmail.com
+                    </div>
                     
-                    Interested in joining?
-                    Fill out our
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgdHqfrIbdoDwoKo06yk677UNw07TpHJFL-hvNZ62cjojCpw/viewform"> volunteer interest form!</a>"
+                    <div>
+                        Interested in joining?
+                        Fill out our&nbsp;
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgdHqfrIbdoDwoKo06yk677UNw07TpHJFL-hvNZ62cjojCpw/viewform">volunteer interest form!</a>
+                    </div>
                 </div>
             </>
         );

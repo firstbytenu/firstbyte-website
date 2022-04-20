@@ -49,6 +49,9 @@ export default function FeaturedCurricula() {
           ))}
         </Row>
       </Container>
+
+      <br />
+      <br />
     </div>
   );
 }

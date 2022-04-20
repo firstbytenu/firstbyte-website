@@ -18,7 +18,6 @@ class Homepage extends React.Component {
         <StatsSection />
         <FeaturedCurricula />
         <EmailSection />
-        <br />
       </>
     );
   }
