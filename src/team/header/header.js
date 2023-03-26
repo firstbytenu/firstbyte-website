@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import children from "./children.jpg";
 
 function Header() {
-  const chidrenstyle = {
+  const childrenstyle = {
     width: "90%",
     justifyContent: "right",
     alignItems: "center",
@@ -30,27 +30,14 @@ function Header() {
       <Row>
         <Col className="px-5 py-5">
           <br />
-          <p style={titlestyle}>Get your first taste of teaching tech</p>
+          <p style={titlestyle}>Meet the FirstByte team</p>
           <p style={descstyle}>
-            FirstByte provides educators with the materials and support to teach
-            STEM in their classrooms, regardless of budget or technical
-            background.
+            We are a team of undergraduate students at Northeastern University.
           </p>
-          <button type="button" class="btn btn-primary mx-1" style={leftbutton}>
-            For Students
-          </button>
-          &nbsp;
-          <button
-            type="button"
-            class="btn btn-secondary mx-1"
-            href="/for-educators"
-          >
-            For Educators
-          </button>
           &nbsp;
         </Col>
         <Col className="d-flex" style={{ justifyContent: "right" }}>
-          <img src={children} alt="..." style={chidrenstyle}></img>
+          <img src={children} alt="..." style={childrenstyle}></img>
         </Col>
       </Row>
     </>

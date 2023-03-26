@@ -12,7 +12,7 @@ function Header() {
   const titlestyle = {
     fontSize: "3.2rem",
     fontWeight: "bold",
-    lineHeight: "1.2em",
+    lineHeight: "1.2em"
   };
 
   const descstyle = {
@@ -38,18 +38,12 @@ function Header() {
           </p>
           <button type="button" class="btn btn-primary mx-1" style={leftbutton}>
             For Students
-          </button>
-          &nbsp;
-          <button
-            type="button"
-            class="btn btn-secondary mx-1"
-            href="/for-educators"
-          >
+          </button>&nbsp;
+          <button type="button" class="btn btn-secondary mx-1">
             For Educators
-          </button>
-          &nbsp;
+          </button>&nbsp;
         </Col>
-        <Col className="d-flex" style={{ justifyContent: "right" }}>
+        <Col className="d-flex" style={{justifyContent: 'right'}}>
           <img src={children} alt="..." style={chidrenstyle}></img>
         </Col>
       </Row>

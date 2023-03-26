@@ -8,21 +8,21 @@ export default function FeaturedCurricula() {
       description: "Five 40-minute lessons",
       summary:
         "Students create fun programs in a Scratch environment and interact with their programs using a MaKey MaKey. They will be introduced to control flow statements and basic circuit concepts",
-      img: "https://teachfirstbyte.org/static/landing/img/curriculum/makeymakey.jpg"
+      img: "https://teachfirstbyte.org/static/landing/img/curriculum/makeymakey.jpg",
     },
     {
       title: "Introduction to Circuit Playground",
       description: "Eight 45-minute lessons",
       summary:
         "Students will be introduced to the Circuit Playground and its hardware components. After learning coding concepts in ArduBlock, students will transition to coding in the programming language C. The projects incorporated into these lessons make use of the board's various inputs and outputs, making each class creative and fun!",
-      img: "https://teachfirstbyte.org/static/landing/img/curriculum/circuitplayground.jpg"
+      img: "https://teachfirstbyte.org/static/landing/img/curriculum/circuitplayground.jpg",
     },
     {
       title: "Fashion SENCE with Arduino",
       description: "Ten 2 hour lessons",
       summary:
         "In FashionSENCE (sewable electronics n’ coding education), students create their own wearable technology using LilyPad Arduinos. They will be introduced to coding in a Scratch environment, defining variables, control flow statements, basic circuitry, and sewing!",
-      img: "https://teachfirstbyte.org/static/landing/img/curriculum/lilypad.jpg"
+      img: "https://teachfirstbyte.org/static/landing/img/curriculum/lilypad.jpg",
     },
   ];
 
@@ -30,7 +30,7 @@ export default function FeaturedCurricula() {
     <div className="container">
       <div className="d-flex justify-content-between my-3">
         <h2 style={{ color: colors.font }}>Featured curricula</h2>
-        <a style={{ color: colors.primary }} href="/">
+        <a style={{ color: colors.primary }} href="/curricula">
           View All Curricula
         </a>
       </div>
@@ -63,9 +63,9 @@ function Curricula({ title, description, summary, img }) {
     </Popover>
   );
   return (
-    <OverlayTrigger trigger="hover" placement="bottom" overlay={popover}>
+    <OverlayTrigger trigger="hover" placement="top" overlay={popover}>
       <a href="/" className="col card text-decoration-none mb-3">
-        <img style={{ height: "250px" }} src={img} alt="..."/>
+        <img style={{ height: "250px" }} src={img} alt="..." />
         <div className="card-body">
           <h5 className="card-title" style={{ color: colors.font }}>
             {title}
