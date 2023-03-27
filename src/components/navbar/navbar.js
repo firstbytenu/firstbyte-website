@@ -2,6 +2,7 @@ import React from "react";
 //import { AppBar, Container, Toolbar, Box } from "@mui/material";
 import "./navbar.css";
 //import "../../public/Bit.png";
+import { Button } from "@mui/material";
 
 function Navbar() {
   return (
@@ -35,13 +36,20 @@ function Navbar() {
           </li>
         </ul>
         <div>
-          <button type="button" class="btn btn-secondary mx-1">
+          <Button
+            variant="text"
+            className="btn-secondary"
+            style={{ marginRight: "1rem" }}
+          >
             Log In
-          </button>
-          &nbsp;&nbsp;
-          <button type="button" class="btn btn-primary">
+          </Button>
+          <Button
+            variant="text"
+            className="btn-primary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfgdHqfrIbdoDwoKo06yk677UNw07TpHJFL-hvNZ62cjojCpw/viewform"
+          >
             Sign Up
-          </button>
+          </Button>
         </div>
       </div>
     </nav>

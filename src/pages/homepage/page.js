@@ -20,7 +20,10 @@ class Homepage extends React.Component {
           desc="FirstByte provides educators with the materials and support 
           to teach STEM in their classrooms, regardless of budget or 
           technical background."
-          button1={{ text: "FOR STUDENTS" }}
+          button1={{
+            text: "FOR STUDENTS",
+            href: "https://docs.google.com/forms/d/e/1FAIpQLSfgdHqfrIbdoDwoKo06yk677UNw07TpHJFL-hvNZ62cjojCpw/viewform",
+          }}
           button2={{ text: "FOR EDUCATORS", href: "/for-educators" }}
           img={children}
         />

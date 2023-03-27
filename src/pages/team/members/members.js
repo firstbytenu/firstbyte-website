@@ -71,10 +71,12 @@ const Members = () => {
 
   return (
     <Teams
-      teamnames={["E-BOARD", "EDUCATOR ENABLEMENT"]}
+      teamnames={["E-BOARD", "SOFTWARE", "MARKETING", "CURRICULUM"]}
       descriptions={[
-        "Placeholder",
-        "FirstByte's primary point of contact with our audience. Members on this team work directly with teachers and facilitate the loaner program. They also network with schools, educators, parents, and organizations to implement technology curricula and identify the community's unaddressed needs.",
+        "E-Board Description",
+        "Software Description",
+        "Marketing Description",
+        "Curriculum Description",
       ]}
     />
   );
