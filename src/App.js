@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
-import Homepage from "./homepage/page";
-import Team from "./team/page";
-import Curricula from "./curricula/page";
-import Educators from "./educators/page";
+import Homepage from "./pages/homepage/page";
+import Team from "./pages/team/page";
+import Curricula from "./pages/curricula/page";
+import Educators from "./pages/educators/page";
 
 const App = () => (
   <Routes>
