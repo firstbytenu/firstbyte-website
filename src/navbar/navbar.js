@@ -14,7 +14,7 @@ function Navbar() {
                         <a class="nav-link text-logo" href="/">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-logo" href="/team">MEET THE TEAM</a>
+                        <a class="nav-link text-logo" href="/meetTeam">MEET THE TEAM</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-logo" href="/curricula">CURRICULA</a>
