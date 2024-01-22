@@ -14,10 +14,10 @@ class Homepage extends React.Component {
     return (
       <>
         <Navbar />
-        <Header />
+        {/* <Header />
         <StatsSection />
         <FeaturedCurricula />
-        <EmailSection />
+        <EmailSection /> */}
       </>
     );
   }
