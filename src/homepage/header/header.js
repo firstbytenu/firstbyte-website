@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import children from "./children.jpg";
+import stphn3 from "./stphn3.jpg";
 import { Link } from "react-router-dom";
 // import "firstbyte-website-master/src/homepage/header/foreducators.html";
 // import "firstbyte-website-master/src/homepage/header/forstudents.html";
@@ -8,9 +9,11 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const chidrenstyle = {
-    width: "90%",
+    width: "50%",
     justifyContent: "right",
     alignItems: "center",
+    marginLeft: "20px", 
+
   };
 
   const titlestyle = {
@@ -67,7 +70,10 @@ console.log("JavaScript is running!"); //checking to see if javascript is in fac
 
         </Col>
         <Col className="d-flex" style={{justifyContent: 'right'}}>
-          <img src={children} alt="..." style={chidrenstyle}></img>
+        <img src={stphn3} alt="..." style={chidrenstyle}></img>
+        <img src={children} alt="..." style={chidrenstyle}></img>
+
+
         </Col>
       </Row>
     </>

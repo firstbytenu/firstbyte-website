@@ -5,7 +5,7 @@ import Homepage from './homepage/page';
 // import ForEducators from './header/forstudents';
 // import ForEducators from './ForEducators';
 import ForEducators from './forEducators';
-
+// import Meetthecurriculateam from "./meetthecurriculateam.js";
 const App = () => (
     <Routes>
         <Route path="/" element={<Homepage />} />  
@@ -13,6 +13,8 @@ const App = () => (
         {/* <Route path="/team" element={<Homepage />} />
         <Route path="/curricula" element={<Homepage />} />*/
         <Route path="/for-educators" element={<ForEducators />} />}
+        {/* <Route path="/meetthecurriculateam" element={<Meetthecurriculateam />} /> */}
+
         <Route path="*" element={<Navigate to="/" />} />
     </Routes>
 );
