@@ -46,16 +46,24 @@ function header() {
       return (
         <Row className="my-auto justify-content-center">
           <Col className="my-auto text-center mx-2">
-            <img src={img1} alt="..." className="img-fluid"></img>
+          <div class="frame">
+          <img src={img1} alt="..." className="img-fluid"></img>
+          </div>
           </Col>
           <Col className="my-auto px-5 text-center mx-2">
+          <div class="frame">
             <img src={img2} alt="..." className="img-fluid"></img>
+            </div>
           </Col>
           <Col className="my-auto text-center mx-2">
+          <div class="frame">
             <img src={img3} alt="..." className="img-fluid"></img>
+            </div>
           </Col>
           <Col className="my-auto text-center mx-2">
+          <div class="frame">
             <img src={img4} alt="..." className="img-fluid"></img>
+            </div>
           </Col>
         </Row>
       );
@@ -65,13 +73,19 @@ function header() {
       return (
         <Row className="my-auto justify-content-center">
           <Col className="my-auto text-center mx-2">
+          <div class="frame">
             <img src={img7} alt="..." className="img-fluid"></img>
+            </div>
           </Col>
           <Col className="my-auto px-5 text-center mx-2">
+          <div class="frame">
             <img src={img5} alt="..." className="img-fluid"></img>
+            </div>
           </Col>
           <Col className="my-auto text-center mx-2">
+          <div class="frame">
             <img src={img6} alt="..." className="img-fluid"></img>
+            </div>
           </Col>
         </Row>
       );

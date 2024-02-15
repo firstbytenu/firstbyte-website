@@ -11,7 +11,7 @@ function header() {
     color: colors.font,
     backgroundColor: colors.secondary,
   };
-
+  
   function imageRow(img1, img2, img3) {
     return (
       <Row className="my-auto justify-content-center">

@@ -16,14 +16,22 @@ function Navbar() {
                     <li class="nav-item">
                         <a class="nav-link text-logo" href="/meetTeam">MEET THE TEAM</a>
                     </li>
+                   
+                    <div class="dropdown">
                     <li class="nav-item">
                         <a class="nav-link text-logo" href="/curricula">CURRICULA</a>
-                    </li>
+                        <div class="dropdown-content">
+                        <a href="/northeastern">Northeastern Team</a>
+                         <a href="/harbor">Camp Harbor View Team</a>
+                         <a href="/stephens">St. Stephens Team</a>
+                         </div>
+                         </li>
+                         </div>
                 </ul>
                 <div>
-                    <button type="button" class="btn btn-secondary mx-1">Log In</button>
-                    &nbsp;&nbsp;
-                    <button type="button" class="btn btn-primary">Sign Up</button>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfgdHqfrIbdoDwoKo06yk677UNw07TpHJFL-hvNZ62cjojCpw/viewform"> 
+        <button class = "btn btn-primary" type="submit">Interest Form! </button> 
+    </form> 
                 </div>
             </div>
         </nav>
