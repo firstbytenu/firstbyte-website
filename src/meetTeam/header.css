@@ -18,6 +18,7 @@
   .img {
     justify-content: right;
     width: 40%;
+   /* border: 5px solid #555555; */
   }
   
   .midcol {
@@ -25,4 +26,10 @@
     padding-right: 500px !important;
     justify-content: left;
   }
+
+  .ImageBorder
+{
+    border-width: 1px;
+    border-color: rgb(30, 2, 1);
+}
   
