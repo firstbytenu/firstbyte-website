@@ -1,8 +1,8 @@
-import React, { useRef } from 'react'
+// import React, { useRef } from 'react'
 import './contactsection.css';
 
 const EmailSection = () => {
-    const form = useRef();
+   /** const form = useRef();
     
     const sendEmail = (e) => {
         e.preventDefault();
@@ -13,7 +13,7 @@ const EmailSection = () => {
         // }, (error) => {
         //     console.log(error.text);
         // });
-    }
+    } **/
         
         return (
             <>
@@ -32,11 +32,6 @@ const EmailSection = () => {
                         Email address: teachfirstbyte@gmail.com
                     </div>
                     
-                    <div>
-                        Interested in joining?
-                        Fill out our&nbsp;
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgdHqfrIbdoDwoKo06yk677UNw07TpHJFL-hvNZ62cjojCpw/viewform">volunteer interest form!</a>
-                    </div>
                 </div>
             </>
         );
