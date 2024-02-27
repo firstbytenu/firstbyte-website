@@ -8,7 +8,7 @@
 }
 
 .col {
-  padding: 0.25rem 0.5rem 0.5rem 0.25rem;
+  padding-top: 0.25rem 0.5rem 0.5rem 0.25rem;
 }
 
 .container {
@@ -44,17 +44,26 @@ width: 250px;
 height: 250px; 
 border: 7px solid #699A76;
 }
-
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:10}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
 .image-text-wrapper {
 display: flex;
 }
 
-p {
-  white-space: nowrap;
+.parent {
+  display: flex;
+  align-items: center;
 }
 h{
   text-indent: 10px;
 }
 
-  
+span {
+  display: inline-block;
+}
+.align-middle {
+vertical-align: middle;
+}

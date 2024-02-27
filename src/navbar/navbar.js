@@ -21,9 +21,9 @@ function Navbar() {
                     <li class="nav-item">
                         <a class="nav-link text-logo" href="/curricula">CURRICULA</a>
                         <div class="dropdown-content">
-                        <a href="/northeastern">Northeastern Team</a>
-                         <a href="/harbor">Camp Harbor View Team</a>
-                         <a href="/stephens">St. Stephens Team</a>
+                        <a href="/curricula">Northeastern Team</a>
+                         <a href="/curricula">Camp Harbor View Team</a>
+                         <a href="/curricula">St. Stephens Team</a>
                          </div>
                          </li>
                          </div>
