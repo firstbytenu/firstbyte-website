@@ -1,0 +1,41 @@
+.description {
+    padding: 10rem 0 10rem 0;
+  }
+  
+  .row {
+    padding: 1rem 1rem 1rem 1rem;
+    justify-content: center;
+  }
+  
+  .col {
+    padding: 0.25rem 0.5rem 0.5rem 0.25rem;
+  }
+  
+  .container {
+    padding: 0.5% 0.5% 0.5% 0.5%;
+  }
+  
+  .img {
+    justify-content: right;
+    width: 40%;
+   /* border: 5px solid #555555; */
+  }
+  
+  .midcol {
+    padding-left: 5000px !important;
+    padding-right: 500px !important;
+    justify-content: left;
+  }
+
+  .ImageBorder
+{
+    border-width: 1px;
+    border-color: rgb(30, 2, 1);
+}
+
+.frame {
+ /* width: 300px;
+  height: 250px; */
+  border: 0cap solid #699A76;
+}
+  
