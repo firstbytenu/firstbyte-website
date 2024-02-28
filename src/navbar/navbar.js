@@ -12,23 +12,29 @@ function Navbar() {
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        {/* <a class="nav-link text-logo" href="/">HOME</a> */}
                         <Link class="nav-link text-logo" to="/">HOME</Link>
+
                     </li>
                     <li class="nav-item">
-                        <Link class="nav-link text-logo" to="/team">MEET THE TEAM</Link>
+                        {/* <a class="nav-link text-logo" href="/meetTeam">MEET THE TEAM</a> */}
+                        <Link class="nav-link text-logo" to="/meetTeam">MEET THE TEAM</Link>
+
                     </li>
-                    <li class="nav-item">
-                        <Link class="nav-link text-logo" to="/curricula">CURRICULA</Link>
+                    <li className="nav-item dropdown">
+                        <Link className="nav-link text-logo dropdown-toggle" to="/meetTeam" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CURRICULA
+                        </Link>
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <Link className="dropdown-item" to="/curricula#neu">Northeastern Team</Link>
+                            <Link className="dropdown-item" to="/curricula#camp">Camp Harbor View Team</Link>
+                            <Link className="dropdown-item" to="/curricula#st">St. Stephens Team</Link>
+                        </div>
                     </li>
                 </ul>
-                <div>
-                    <button type="button" class="btn btn-secondary mx-1">Log In</button>
-                    &nbsp;&nbsp;
-                    <button type="button" class="btn btn-primary">Sign Up</button>
-                </div>
             </div>
         </nav>
-  )
+    );
 }
 
-export default Navbar;
+export default Navbar; 
