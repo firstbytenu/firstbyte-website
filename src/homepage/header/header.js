@@ -52,18 +52,18 @@ console.log("JavaScript is running!"); //checking to see if javascript is in fac
 
 
 
-          <a href="/forstudents.html" target="_blank">
-          <button type="button" class="btn btn-primary mx-1" style={leftbutton}>
-            For Students
-          </button>
-          </a>
+          // <a href="/forstudents.html" target="_blank">
+          // <button type="button" class="btn btn-primary mx-1" style={leftbutton}>
+          //   For Students
+          // </button>
+          // </a>
 
-          {/* <button type="button" class="btn btn-secondary mx-1">
-            For Educators                                                                         //can not use a href without an on click event
-          </button> */}
-          <Link to="/for-educators" className="btn btn-secondary mx-1">
-            For Educators
-          </Link>
+          // {/* <button type="button" class="btn btn-secondary mx-1">
+          //   For Educators                                                                         //can not use a href without an on click event
+          // </button> */}
+          // <Link to="/for-educators" className="btn btn-secondary mx-1">
+          //   For Educators
+          // </Link>
 
          
 
