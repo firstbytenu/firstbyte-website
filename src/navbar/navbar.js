@@ -21,16 +21,7 @@ function Navbar() {
                         <Link class="nav-link text-logo" to="/meetTeam">MEET THE TEAM</Link>
 
                     </li>
-                    <li className="nav-item dropdown">
-                        <Link className="nav-link text-logo dropdown-toggle" to="/meetTeam" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CURRICULA
-                        </Link>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <Link className="dropdown-item" to="/curricula#neu">Northeastern Team</Link>
-                            <Link className="dropdown-item" to="/curricula#camp">Camp Harbor View Team</Link>
-                            <Link className="dropdown-item" to="/curricula#st">St. Stephens Team</Link>
-                        </div>
-                    </li>
+                        <Link className="nav-link text-logo" to="/curricula">CURRICULA</Link>
                 </ul>
             </div>
         </nav>
