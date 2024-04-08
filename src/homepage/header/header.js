@@ -16,18 +16,31 @@ function Header() {
 
   };
 
+  // const titlestyle = {
+  //   fontSize: "3.2rem",
+  //   fontWeight: "bold",
+  //   lineHeight: "1.2em"
+  // };
+
+  // const descstyle = {
+  //   fontSize: "1.5rem",
+  //   fontWeight: "bold",
+  //   marginBottom: "3rem",
+  // };
+
   const titlestyle = {
     fontSize: "3.2rem",
     fontWeight: "bold",
-    lineHeight: "1.2em"
+    lineHeight: "1.2em",
+    marginBottom: "1em", // Adding marginBottom to create space after the paragraph
   };
-
+  
+  
   const descstyle = {
-    fontSize: "1.5rem",
-    fontWeight: "bold",
-    marginBottom: "3rem",
+    fontSize: "1rem",
+    lineHeight: "1.6em",
   };
-
+   
   const leftbutton = {
     marginRight: "3rem",
   };
@@ -42,7 +55,7 @@ console.log("JavaScript is running!"); //checking to see if javascript is in fac
       <Row>
         <Col className="px-5 py-5">
           <br />
-          <p style={titlestyle}>Get your first taste of teaching tech</p>
+          <p style={titlestyle}>Get your first taste of teaching STEM</p> 
           <p style={descstyle}>
             FirstByte provides educators with the materials and support to teach
             STEM in their classrooms, regardless of budget or technical
@@ -52,19 +65,19 @@ console.log("JavaScript is running!"); //checking to see if javascript is in fac
 
 
 
-          // <a href="/forstudents.html" target="_blank">
-          // <button type="button" class="btn btn-primary mx-1" style={leftbutton}>
-          //   For Students
-          // </button>
-          // </a>
+          
+          {/* <a href="/forstudents.html" target="_blank">
+          <button type="button" class="btn btn-primary mx-1" style={leftbutton}>
+            For Students
+          </button>
+          </a> */}
 
-          // {/* <button type="button" class="btn btn-secondary mx-1">
-          //   For Educators                                                                         //can not use a href without an on click event
-          // </button> */}
-          // <Link to="/for-educators" className="btn btn-secondary mx-1">
-          //   For Educators
-          // </Link>
-
+          {/* <button type="button" class="btn btn-secondary mx-1">
+            For Educators                                                                         //can not use a href without an on click event
+          </button> */}
+          {/* <Link to="/for-educators" className="btn btn-secondary mx-1">
+            For Educators
+          </Link> */}
          
 
 
