@@ -30,9 +30,9 @@ export default function FeaturedCurricula() {
     <div className="container">
       <div className="d-flex justify-content-between my-3">
         <h2 style={{ color: colors.font }}>Featured curricula</h2>
-        <a style={{ color: colors.primary }} href="/">
-          View All Curricula
-        </a>
+        // <a style={{ color: colors.primary }} href="/">
+        //   View All Curricula
+        // </a>
       </div>
 
       <Container>
