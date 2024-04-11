@@ -31,7 +31,7 @@ const NavbarLogo: React.FC<NavbarLogoProps> = ({
       ) : (
         <a href={link} target="_blank" className={style}>
           <img src={image} className="h-6" alt={alt} />
-          <span className="hidden md:block self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="hidden lg:block self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             {title}
           </span>
         </a>
