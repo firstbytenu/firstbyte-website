@@ -6,6 +6,7 @@ import Home from "../Home/Home";
 import Navbar from "../../slices/Navbar/Navbar";
 import Team from "../Team/Team";
 import useIsAnimateNavbar from "../../hooks/useIsAnimateNavbar";
+import Join from "../Join/Join";
 
 const Router = () => {
   const [isAnimateNavbar, toggleIsAnimateNavbar] = useIsAnimateNavbar();
@@ -41,15 +42,7 @@ const Router = () => {
               />
             }
           />
-          <Route
-            path="/contact"
-            element={
-              <Home
-                isAnimateNavbar={isAnimateNavbar}
-                toggleIsAnimateNavbar={toggleIsAnimateNavbar}
-              />
-            }
-          />
+          <Route path="/contact" element={<Join />} />
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </BrowserRouter>

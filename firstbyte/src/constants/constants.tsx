@@ -20,7 +20,7 @@ export default {
       isActive: false,
     },
     {
-      title: "Contact Us",
+      title: "Join Us",
       link: "/contact",
       isActive: false,
     },
@@ -83,4 +83,6 @@ export default {
       image: "srikar.jpg",
     },
   ],
+  joinForm:
+    "https://docs.google.com/forms/d/e/1FAIpQLSfgdHqfrIbdoDwoKo06yk677UNw07TpHJFL-hvNZ62cjojCpw/viewform",
 };
