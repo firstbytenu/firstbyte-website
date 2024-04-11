@@ -4,16 +4,52 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "../../styles/css/Main/main.css";
 import Home from "../Home/Home";
 import Navbar from "../../slices/Navbar/Navbar";
+import Team from "../Team/Team";
+import useIsAnimateNavbar from "../../hooks/useIsAnimateNavbar";
 
 const Router = () => {
+  const [isAnimateNavbar, toggleIsAnimateNavbar] = useIsAnimateNavbar();
+
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" Component={Home} />
-          <Route path="/team" Component={Home} />
-          <Route path="/curricula" Component={Home} />
-          <Route path="/contact" Component={Home} />
+          <Route
+            path="/"
+            element={
+              <Home
+                isAnimateNavbar={isAnimateNavbar}
+                toggleIsAnimateNavbar={toggleIsAnimateNavbar}
+              />
+            }
+          />
+          <Route
+            path="/team"
+            element={
+              <Team
+                isAnimateNavbar={isAnimateNavbar}
+                toggleIsAnimateNavbar={toggleIsAnimateNavbar}
+              />
+            }
+          />
+          <Route
+            path="/curricula"
+            element={
+              <Home
+                isAnimateNavbar={isAnimateNavbar}
+                toggleIsAnimateNavbar={toggleIsAnimateNavbar}
+              />
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Home
+                isAnimateNavbar={isAnimateNavbar}
+                toggleIsAnimateNavbar={toggleIsAnimateNavbar}
+              />
+            }
+          />
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </BrowserRouter>

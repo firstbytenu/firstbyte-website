@@ -3,10 +3,21 @@
 import React from "react";
 import Navbar from "../../slices/Navbar/Navbar";
 
-const Home = () => {
+type HomeProps = {
+  isAnimateNavbar: unknown;
+  toggleIsAnimateNavbar: unknown;
+};
+
+const Home: React.FC<HomeProps> = ({
+  isAnimateNavbar,
+  toggleIsAnimateNavbar,
+}) => {
   return (
     <>
-      <Navbar />
+      <Navbar
+        animate={isAnimateNavbar}
+        toggleIsAnimateNavbar={toggleIsAnimateNavbar}
+      />
     </>
   );
 };
