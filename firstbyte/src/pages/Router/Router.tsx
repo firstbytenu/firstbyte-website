@@ -3,6 +3,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "../../styles/css/Main/main.css";
 import Home from "../Home/Home";
+import Navbar from "../../slices/Navbar/Navbar";
 
 const Router = () => {
   return (
