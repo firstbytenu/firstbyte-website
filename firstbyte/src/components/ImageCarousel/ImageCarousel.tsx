@@ -9,14 +9,46 @@ type CarouselProps = {
 };
 
 const ImageCarousel: React.FC<CarouselProps> = ({ images }) => {
-  const [ref] = useKeenSlider<HTMLDivElement>({
-    loop: true,
-  });
+  const [sliderRef] = useKeenSlider<HTMLDivElement>(
+    {
+      loop: true,
+    },
+    [
+      (slider) => {
+        let timeout: ReturnType<typeof setTimeout>;
+        let mouseOver = false;
+        function clearNextTimeout() {
+          clearTimeout(timeout);
+        }
+        function nextTimeout() {
+          clearTimeout(timeout);
+          if (mouseOver) return;
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 4000);
+        }
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseOver = true;
+            clearNextTimeout();
+          });
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+          nextTimeout();
+        });
+        slider.on("dragStarted", clearNextTimeout);
+        slider.on("animationEnded", nextTimeout);
+        slider.on("updated", nextTimeout);
+      },
+    ]
+  );
 
   return (
     <>
-      <div className="w-80 h-96 overflow-hidden rounded-lg md:h-96">
-        <div ref={ref} className="keen-slider w-80 h-96">
+      <div className="w-80 h-96 overflow-hidden rounded-lg md:h-96 cursor-pointer">
+        <div ref={sliderRef} className="keen-slider w-80 h-96">
           {images.map((image) => {
             return (
               <div className="w-80 h-96">
