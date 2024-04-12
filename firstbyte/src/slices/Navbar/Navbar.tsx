@@ -32,7 +32,6 @@ const Navbar: React.FC<NavbarProps> = ({ animate, toggleIsAnimateNavbar }) => {
         </motion.div>
       ) : (
         <div>
-          {" "}
           <NavbarInternal />
         </div>
       )}

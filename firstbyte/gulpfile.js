@@ -53,7 +53,7 @@ const tsScripts = () => {
 };
 
 const imageMinifier = () => {
-  return src("public/images/*")
+  return src("./public/images/*")
     .pipe(imagemin())
     .pipe(
       imagemin([
@@ -74,14 +74,14 @@ const imageMinifier = () => {
         }),
       ])
     )
-    .pipe(dest("public/images_minified/"));
+    .pipe(dest("./public/minified_images/"));
 };
 
 const watchTask = () => {
   watch("./src/styles/**/*.scss", styles);
   watch("./src/**/*.tsx", tsxScripts);
   watch("./src/**/*.ts", tsScripts);
-  watch("public/images/*", imageMinifier);
+  watch("./public/images/*", imageMinifier);
 };
 
 export default series(styles, tsxScripts, tsScripts, watchTask);

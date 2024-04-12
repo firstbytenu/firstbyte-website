@@ -4,23 +4,23 @@ import React, { useEffect } from "react";
 import Navbar from "../../slices/Navbar/Navbar";
 import Hero from "../../slices/Hero/Hero";
 import Footer from "../../slices/Footer/Footer";
-import Profiles from "../../components/Profiles/Profiles";
+import CurriculaTeams from "../../slices/CurriculaTeams/CurriculaTeams";
 
-type TeamProps = {
+type CurriculaProps = {
   isAnimateNavbar: unknown;
   toggleIsAnimateNavbar: unknown;
 };
 
-const Team: React.FC<TeamProps> = ({
+const Curricula: React.FC<CurriculaProps> = ({
   isAnimateNavbar,
   toggleIsAnimateNavbar,
 }) => {
   useEffect(() => {
-    document.title = "FirstByte - Team";
+    document.title = "FirstByte - Curricula";
     return () => {
       document.title = "FirstByte - Northeastern's Organization";
     };
-  });
+  }, []);
 
   return (
     <>
@@ -28,19 +28,19 @@ const Team: React.FC<TeamProps> = ({
         animate={isAnimateNavbar}
         toggleIsAnimateNavbar={toggleIsAnimateNavbar}
       />
-
-      <div className="pt-20">
+      <div className="py-20">
         <Hero
-          headingText={"Meet"}
-          headingIlluminateText={"FirstByte"}
-          backText={"Team"}>
-          <Profiles />
+          headingText={"This is our"}
+          headingIlluminateText={"Curricula"}
+          backText={""}>
+          <CurriculaTeams />
+          <CurriculaTeams />
+          <CurriculaTeams />
         </Hero>
       </div>
-
       <Footer />
     </>
   );
 };
 
-export default Team;
+export default Curricula;

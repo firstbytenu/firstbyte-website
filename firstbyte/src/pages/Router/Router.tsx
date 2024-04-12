@@ -7,6 +7,7 @@ import Navbar from "../../slices/Navbar/Navbar";
 import Team from "../Team/Team";
 import useIsAnimateNavbar from "../../hooks/useIsAnimateNavbar";
 import Join from "../Join/Join";
+import Curricula from "../Curricula/Curricula";
 
 const Router = () => {
   const [isAnimateNavbar, toggleIsAnimateNavbar] = useIsAnimateNavbar();
@@ -36,7 +37,7 @@ const Router = () => {
           <Route
             path="/curricula"
             element={
-              <Home
+              <Curricula
                 isAnimateNavbar={isAnimateNavbar}
                 toggleIsAnimateNavbar={toggleIsAnimateNavbar}
               />

@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../slices/Navbar/Navbar";
 
 type HomeProps = {
@@ -12,6 +12,13 @@ const Home: React.FC<HomeProps> = ({
   isAnimateNavbar,
   toggleIsAnimateNavbar,
 }) => {
+  useEffect(() => {
+    document.title = "FirstByte - Home";
+    return () => {
+      document.title = "FirstByte - Northeastern's Organization";
+    };
+  });
+
   return (
     <>
       <Navbar

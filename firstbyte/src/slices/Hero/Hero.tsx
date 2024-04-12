@@ -1,17 +1,18 @@
 /** @format */
 
-import React from "react";
+import React, { ReactElement } from "react";
 import HeadingRichText from "../../components/HeadingRichText/HeadingRichText";
 import Container from "../../components/Container/Container";
-import Profiles from "../../components/Profiles/Profiles";
 
-type TeamHeroProps = {
+type HeroProps = {
+  children: any;
   headingText: string;
   headingIlluminateText: string;
   backText: string;
 };
 
-const TeamHero: React.FC<TeamHeroProps> = ({
+const Hero: React.FC<HeroProps> = ({
+  children,
   headingText,
   headingIlluminateText,
   backText,
@@ -25,11 +26,13 @@ const TeamHero: React.FC<TeamHeroProps> = ({
             illuminateText={headingIlluminateText}
             backText={backText}
           />
-          <Profiles />
+          {React.Children.map(children, (eachChild: ReactElement) => {
+            return React.cloneElement(eachChild, {});
+          })}
         </span>
       </Container>
     </>
   );
 };
 
-export default TeamHero;
+export default Hero;
