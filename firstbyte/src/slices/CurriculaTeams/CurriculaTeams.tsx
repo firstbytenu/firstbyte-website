@@ -43,7 +43,10 @@ const CurriculaTeams = () => {
               />
               <div className="grid grid-rows-2 lg:grid-cols-3 lg:grid-rows-1">
                 <div className="mx-auto lg:col-span-1 z-0">
-                  <ImageCarousel images={eachCurricula.images} />
+                  <div className="grid grid-rows-1">
+                    <ImageCarousel images={eachCurricula.images} />
+                    <span className="font-light text-gray-500 text-center mt-3">Image Gallery of our Events</span>
+                  </div>
                 </div>
                 <div className="lg:col-span-2">
                   <TeamCard title={"Mission"} text={eachCurricula.mission} />

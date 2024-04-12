@@ -10,7 +10,7 @@ type TeamCardProps = {
 const TeamCard: React.FC<TeamCardProps> = ({ title, text }) => {
   return (
     <>
-      <div className="mx-3 mb-3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:my-3">
+      <div className="mx-3 mb-3 p-6 bg-white hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:my-3">
         <a href="#">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {title}
