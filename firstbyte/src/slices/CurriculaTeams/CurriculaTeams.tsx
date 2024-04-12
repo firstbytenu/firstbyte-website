@@ -29,7 +29,7 @@ const CurriculaTeams = () => {
               animate={{ x: 0 }}
               transition={{
                 duration: 0.1,
-                delay: 0,
+                delay: 0.1 * index,
                 type: "spring",
                 stiffness: 200,
               }}
