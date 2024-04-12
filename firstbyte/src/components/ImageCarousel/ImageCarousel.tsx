@@ -51,9 +51,7 @@ const ImageCarousel: React.FC<CarouselProps> = ({ images }) => {
         <div ref={sliderRef} className="keen-slider w-80 h-96">
           {images.map((image) => {
             return (
-              <div className="w-80 h-96">
-                <img src={image} className="keen-slider__slide" alt={image} />
-              </div>
+              <img src={image} className="keen-slider__slide" alt={image} />
             );
           })}
         </div>
