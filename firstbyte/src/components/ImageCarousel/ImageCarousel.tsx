@@ -6,7 +6,7 @@ type CarouselProps = {
   images: Array<string>;
 };
 
-const Carousel: React.FC<CarouselProps> = ({ images }) => {
+const ImageCarousel: React.FC<CarouselProps> = ({ images }) => {
   return (
     <>
       <div
@@ -79,4 +79,4 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   );
 };
 
-export default Carousel;
+export default ImageCarousel;
