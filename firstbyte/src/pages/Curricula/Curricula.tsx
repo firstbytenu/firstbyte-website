@@ -34,8 +34,6 @@ const Curricula: React.FC<CurriculaProps> = ({
           headingIlluminateText={"Curricula"}
           backText={""}>
           <CurriculaTeams />
-          <CurriculaTeams />
-          <CurriculaTeams />
         </Hero>
       </div>
       <Footer />

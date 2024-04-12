@@ -85,4 +85,30 @@ export default {
   ],
   joinForm:
     "https://docs.google.com/forms/d/e/1FAIpQLSfgdHqfrIbdoDwoKo06yk677UNw07TpHJFL-hvNZ62cjojCpw/viewform",
+  curricula: [
+    {
+      teamName: "Team Northeastern",
+      mission:
+        "To teach and develop Computer Science curriculum for highschoolers in local Boston area and other organizations at Northeastern.",
+      history:
+        "We've made and taught an intro CS workshop that involves no electricity for highschoolers, Git+Command Line workshop for NEU clubs, and intro to Discrete Math for highschoolers.",
+      images: ["NU1.png", "NU2.png"],
+    },
+    {
+      teamName: "Team Camp Harbor",
+      mission:
+        "The Camp Harbor View Team’s purpose is to connect with students grade 9-12 and teach STEM related curriculum with a focus in Computer Science. We teach at CHV’s Leadership Academy in the South End, and sometimes have the kids come for workshops here at Northeastern University.",
+      history:
+        "So far, we’ve run workshops about micro controllers using the Micro:bit, web development technologies such as HTML and CSS, and 3-D modeling/printing tools and their applications.",
+      images: ["CH1.png", "CH2.png", "CH3.jpg"],
+    },
+    {
+      teamName: "Team St Stephen",
+      mission:
+        "Teach and develop STEM curriculum for elementary and middle school level students in the local Boston area.",
+      history:
+        "We’ve led workshops for students teaching principles of engineering, running experiments, and sparking creativity while exploring scientific concepts. Some of our past lessons include: creating marshmallow spaghetti towers to understand how buildings and bridges are made, pinhole cameras to learn about light and optics, and making rubber band cars to explore potential and kinetic energy in physics.",
+      images: ["ST1.jpg", "ST2.jpg", "ST3.jpg"],
+    },
+  ],
 };

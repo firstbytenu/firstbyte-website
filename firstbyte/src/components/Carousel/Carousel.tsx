@@ -2,7 +2,11 @@
 
 import React from "react";
 
-const Carousel = () => {
+type CarouselProps = {
+  images: Array<string>;
+};
+
+const Carousel: React.FC<CarouselProps> = ({ images }) => {
   return (
     <>
       <div
@@ -10,15 +14,20 @@ const Carousel = () => {
         className="relative w-80 h-auto"
         data-carousel="static">
         <div className="relative h-96 overflow-hidden rounded-lg md:h-96">
-          <div
-            className="hidden duration-700 ease-in-out"
-            data-carousel-item="active">
-            <img
-              src="st2.jpg"
-              className="absolute block w-full h-full rounded-lg"
-              alt="st1.jpg"
-            />
-          </div>
+          {images.map((image) => {
+            return (
+              <div
+                key={image}
+                className="hidden duration-700 ease-in-out"
+                data-carousel-item="active">
+                <img
+                  src={image}
+                  className="absolute block w-full h-full rounded-lg"
+                  alt={image}
+                />
+              </div>
+            );
+          })}
         </div>
 
         <button
