@@ -18,7 +18,7 @@ const HomeHero = () => {
             type: "spring",
             stiffness: 200,
           }}>
-          <div className="grid grid-rows-2 md:grid-cols-2 h-screen">
+          <div className="grid grid-rows-2 md:grid-cols-2 md:h-screen">
             <div className="text-[#546c54] text-center flex items-center justify-center">
               <div className="grid grid-rows-4 md:grid-rows-3 mt-64">
                 <motion.div
