@@ -32,6 +32,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         animate={{ x: 0 }}
         exit={{ x: -100 }}
         transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+        whileHover={{ scale: 1.01 }}
         className="flex flex-col p-5 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 my-5">
         <img
           className="w-32 h-32 mb-3 rounded-full shadow-lg mt-3 mx-5"

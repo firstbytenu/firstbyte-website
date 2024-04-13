@@ -12,7 +12,11 @@ export default {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "firstbyte-green": "#546c4",
+      },
+    },
   },
   presets: ["@babel/preset-env", "@babel/preset-react"],
   plugins: [flowbitePlugin, "babel-plugin-macros"],

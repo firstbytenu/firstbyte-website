@@ -45,7 +45,9 @@ const CurriculaTeams = () => {
                 <div className="mx-auto lg:col-span-1 z-0">
                   <div className="grid grid-rows-1">
                     <ImageCarousel images={eachCurricula.images} />
-                    <span className="font-light text-gray-500 text-center mt-3">Image Gallery of our Events</span>
+                    <span className="font-light text-gray-500 text-center mt-3">
+                      Image Gallery of {eachCurricula.teamName}
+                    </span>
                   </div>
                 </div>
                 <div className="lg:col-span-2">

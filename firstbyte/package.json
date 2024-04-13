@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
     "styled-components": "^6.1.8",
-    "twin.macro": "^3.4.1"
+    "twin.macro": "^3.4.1",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
