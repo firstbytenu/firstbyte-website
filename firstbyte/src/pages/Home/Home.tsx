@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import Navbar from "../../slices/Navbar/Navbar";
 import HomeHero from "../../slices/HomeHero/HomeHero";
 import Footer from "../../slices/Footer/Footer";
+import FactSlice from "../../slices/FactSlice/FactSlice";
 
 type HomeProps = {
   isAnimateNavbar: unknown;
@@ -28,6 +29,7 @@ const Home: React.FC<HomeProps> = ({
         toggleIsAnimateNavbar={toggleIsAnimateNavbar}
       />
       <HomeHero />
+      <FactSlice />
       <Footer />
     </>
   );
