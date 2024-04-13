@@ -13,10 +13,10 @@ const HomeHero = () => {
           initial={{ y: 100 }}
           animate={{ y: 0 }}
           transition={{
-            duration: 0.1,
+            duration: 0.2, // Adjusted for smoother transition
             delay: 0,
             type: "spring",
-            stiffness: 200,
+            stiffness: 100, // Softer spring for smoother effect
           }}>
           <div className="grid grid-rows-2 md:grid-cols-2 md:h-screen">
             <div className="text-[#546c54] text-center flex items-center justify-center">
@@ -24,20 +24,25 @@ const HomeHero = () => {
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileFocus={{ scale: 1.05 }}
-                  className="text-3xl font-bold text-gray-400 hover:tex-gray-300 md:text-3xl lg:text-6xl">
+                  className="text-3xl font-bold text-gray-400 hover:text-gray-300 md:text-3xl lg:text-6xl">
                   {"Welcome to "}
                   <span className="text-[#546c54]">
                     {constants.organization}
                   </span>
                 </motion.div>
-                <div className="text-2xl font-bold my-4 text-gray-600 md:text-2xl lg:text-3xl">
-                  <Typewriter
-                    options={{
-                      strings: [constants.tag],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
+                <div className="text-2xl font-bold my-4 text-gray-600 md:text-2xl lg:text-3xl transition-all duration-200 ease-in-out">
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.2 }}>
+                    <Typewriter
+                      options={{
+                        strings: [constants.tag],
+                        autoStart: true,
+                        loop: true,
+                      }}
+                    />
+                  </motion.div>
                 </div>
                 <motion.div
                   whileHover={{ scale: 1.02 }}
@@ -51,27 +56,20 @@ const HomeHero = () => {
               initial={{ x: 100 }}
               animate={{ x: 0 }}
               transition={{
-                duration: 0.1,
+                duration: 0.2, // Consistency in transition
                 delay: 0,
                 type: "spring",
-                stiffness: 200,
+                stiffness: 100,
               }}
               className="flex items-center justify-center text-center md:h-screen">
               <div className="grid grid-rows-2">
                 <motion.img
-                  transition={{
-                    duration: 0.1,
-                    delay: 0,
-                    type: "spring",
-                    stiffness: 200,
-                  }}
                   whileHover={{ scale: 1.05 }}
                   whileFocus={{ scale: 1.05 }}
                   className="w-64 h-64 rounded-full shadow-lg mt-3 mx-5 shadow-2xl"
                   src={constants.homeImage}
-                  alt={"FirstByte Home Image"}
+                  alt="FirstByte Home Image"
                 />
-
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   whileFocus={{ scale: 1.02 }}
