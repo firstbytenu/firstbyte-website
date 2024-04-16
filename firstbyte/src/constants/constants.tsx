@@ -4,6 +4,7 @@ export default {
   siteTitle: "FirstByte",
   organization: "FirstByte.",
   tag: "We provide you the essence of teaching STEM.",
+  northeasternLink: "https://northeastern.edu",
   loadingText: "You'll get into FirstByte's ",
   heroText:
     "FirstByte provides educators with the materials and support to teach STEM in their classrooms, regardless of budget or technical background.",

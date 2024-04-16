@@ -41,7 +41,7 @@ const CurriculaTeams = () => {
                 backText={""}
                 subHeading={true}
               />
-              <div className="grid grid-rows-2 lg:grid-cols-3 lg:grid-rows-1">
+              <div className="grid grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 mt-6">
                 <div className="mx-auto lg:col-span-1 z-0">
                   <div className="grid grid-rows-1">
                     <ImageCarousel images={eachCurricula.images} />

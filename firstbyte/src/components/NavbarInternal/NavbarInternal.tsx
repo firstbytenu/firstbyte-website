@@ -4,6 +4,7 @@ import NavbarLogo from "../NavbarLogo/NavbarLogo";
 import NavbarStyledComponents from "../NavbarStyledComponents/NavbarStyledComponents";
 import navStyle from "../../slices/Navbar/NavStyles";
 import NavbarLinks from "../NavbarLinks/NavbarLinks";
+import constants from "../../constants/constants";
 
 const NavbarInternal = () => {
   return (
@@ -25,7 +26,7 @@ const NavbarInternal = () => {
               alt={"Northeastern Logo"}
               title={"Northeastern University"}
               type={"small"}
-              link={"https://northeastern.edu"}
+              link={constants.northeasternLink}
             />
             <button
               data-collapse-toggle="navbar-sticky"
