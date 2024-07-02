@@ -1,0 +1,9 @@
+/** @format */
+
+.glow-text {
+  text-shadow: 0 0 5px #9abb66, 0 0 15px #9abb66, 0 0 20px #9abb66,
+    0 0 40px #9abb66, 0 0 60px #9abb66, 0 0 10px #9abb66, 0 0 98px #9abb66;
+  color: #fcfcfc;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
