@@ -10,7 +10,7 @@ interface TypewriterProps {
 const Typewriter: React.FC<TypewriterProps> = ({
   defaultText,
   texts,
-  typingSpeed = 100,
+  typingSpeed = 150,
   deletingSpeed = 50,
 }) => {
   const [currentText, setCurrentText] = useState<string>(defaultText);
