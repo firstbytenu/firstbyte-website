@@ -53,7 +53,7 @@ const CurriculaTeams = () => {
                 <div className="lg:col-span-2">
                   <TeamCard title={"Mission"} text={eachCurricula.mission} />
                   <TeamCard
-                    title={"Little About Us"}
+                    title={"About Us"}
                     text={eachCurricula.history}
                   />
                 </div>
