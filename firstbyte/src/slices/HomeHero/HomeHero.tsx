@@ -34,14 +34,18 @@ const HomeHero = () => {
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 0.2 }}>
-                    <Typewriter
-                      options={{
-                        strings: [constants.tag],
-                        autoStart: true,
-                        loop: true,
-                      }}
-                    />
+                    transition={{ duration: 0.2 }}
+                  >
+                    <div className="flex items-center justify-center">
+                      {constants.tagConstant}&nbsp;
+                      <Typewriter
+                        options={{
+                          strings: [constants.tag],
+                          autoStart: true,
+                          loop: true,
+                        }}
+                      />
+                    </div>
                   </motion.div>
                 </div>
                 <motion.div
