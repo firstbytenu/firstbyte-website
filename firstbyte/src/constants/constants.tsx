@@ -9,7 +9,7 @@ export default {
   heroText:
     "FirstByte provides educators with the materials and support to teach STEM in their classrooms, regardless of budget or technical background.",
   northeasternTitle: "Northeastern University",
-  homeImage: "firstbyte_home.png",
+  homeImage: "2023Eboard.jpg",
   navbarLinks: [
     {
       title: "Home",

@@ -66,19 +66,10 @@ const HomeHero = () => {
                 <motion.img
                   whileHover={{ scale: 1.05 }}
                   whileFocus={{ scale: 1.05 }}
-                  className="w-64 h-64 rounded-full shadow-lg mt-3 mx-5 shadow-2xl"
+                  className="w-80 h-80 rounded-full shadow-lg mt-3 mx-5 shadow-2xl object-cover object-center"
                   src={constants.homeImage}
                   alt="FirstByte Home Image"
                 />
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  whileFocus={{ scale: 1.02 }}
-                  className="font-md text-md text-center items-center justify-center my-5">
-                  {"This is how fun to be in "}
-                  <div className="font-bold text-[#546c54]">
-                    {constants.organization}
-                  </div>
-                </motion.div>
               </div>
             </motion.div>
           </div>
