@@ -3,8 +3,8 @@
 export default {
   siteTitle: "FirstByte",
   organization: "FirstByte.",
-  tagConstant: "We provide you",
-  tag: "the essence of teaching STEM.",
+  tagConstant: "We provide you ",
+  tag: ["the essence of teaching STEM."],
   northeasternLink: "https://northeastern.edu",
   loadingText: "You'll get into FirstByte's ",
   heroText:

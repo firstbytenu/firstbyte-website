@@ -1,11 +1,15 @@
 /** @format */
 
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import Container from "../../components/Container/Container";
 import constants from "../../constants/constants";
+import Typewriter from "../../components/Typewriter/Typewriter";
+import { useState } from "react";
 
 const HomeHero = () => {
+  const [showText, setShowText] = useState(true);
+
   return (
     <>
       <Container>
@@ -37,13 +41,9 @@ const HomeHero = () => {
                     transition={{ duration: 0.2 }}
                   >
                     <div className="lg:flex lg:items-center justify-center">
-                      {constants.tagConstant}&nbsp;
                       <Typewriter
-                        options={{
-                          strings: [constants.tag],
-                          autoStart: true,
-                          loop: true,
-                        }}
+                        defaultText={constants.tagConstant}
+                        texts={constants.tag}
                       />
                     </div>
                   </motion.div>
