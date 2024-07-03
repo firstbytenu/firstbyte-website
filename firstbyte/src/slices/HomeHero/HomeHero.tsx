@@ -36,7 +36,7 @@ const HomeHero = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <div className="flex items-center justify-center">
+                    <div className="lg:flex lg:items-center justify-center">
                       {constants.tagConstant}&nbsp;
                       <Typewriter
                         options={{
