@@ -2,8 +2,8 @@
 
 import useGetTeam from "../../hooks/useGetTeam";
 import Container from "../Container/Container";
-import ProfileCard from "../ProfileCard/ProfileCard";
-import ProfileCardReverse from "../ProfileCardReverse/ProfileCardReverse";
+import ProfileCard from "../Cards/ProfileCard";
+import ProfileCardReverse from "../Cards/ProfileCardReverse";
 
 const Profiles = () => {
   const [team] = useGetTeam();

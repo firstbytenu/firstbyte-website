@@ -1,7 +1,7 @@
 /** @format */
 
 import { motion } from "framer-motion";
-import NavbarInternal from "../../components/NavbarInternal/NavbarInternal";
+import NavbarInternal from "../../components/Navbar/NavbarInternal";
 import { useEffect } from "react";
 
 type NavbarProps = {
