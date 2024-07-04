@@ -1,9 +1,9 @@
 /** @format */
 
-import NavbarLogo from "../NavbarLogo/NavbarLogo";
-import NavbarStyledComponents from "../NavbarStyledComponents/NavbarStyledComponents";
+import NavbarLogo from "../Navbar/NavbarLogo";
+import NavbarStyledComponents from "../Navbar/NavbarStyledComponents";
 import navStyle from "../../slices/Navbar/NavStyles";
-import NavbarLinks from "../NavbarLinks/NavbarLinks";
+import NavbarLinks from "../Navbar/NavbarLinks";
 import constants from "../../constants/constants";
 
 const NavbarInternal = () => {
