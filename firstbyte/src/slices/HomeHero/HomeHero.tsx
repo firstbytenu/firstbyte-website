@@ -5,10 +5,8 @@ import { motion } from "framer-motion";
 import Container from "../../components/Container/Container";
 import constants from "../../constants/constants";
 import Typewriter from "../../components/Typewriter/Typewriter";
-import { useState } from "react";
 
 const HomeHero = () => {
-  const [showText, setShowText] = useState(true);
 
   return (
     <>
