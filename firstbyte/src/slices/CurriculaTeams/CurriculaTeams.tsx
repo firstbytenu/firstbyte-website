@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import Container from "../../components/Container/Container";
 import HeadingRichText from "../../components/HeadingRichText/HeadingRichText";
-import TeamCard from "../../components/TeamCard/TeamCard";
+import TeamCard from "../../components/Cards/TeamCard";
 import useGetCurricula from "../../hooks/useGetCurricula";
 import { motion } from "framer-motion";
 

@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import HorizontalCard from "../../components/HorizontalCard/HorizontalCard";
+import HorizontalCard from "../../components/Cards/HorizontalCard";
 import { motion } from "framer-motion";
 import HeadingRichText from "../../components/HeadingRichText/HeadingRichText";
 import Container from "../../components/Container/Container";

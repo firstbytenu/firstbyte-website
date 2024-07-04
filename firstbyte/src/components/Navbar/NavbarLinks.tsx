@@ -1,7 +1,7 @@
 /** @format */
 
 import useGetLinks from "../../hooks/useGetLinks";
-import NavbarLinksContainer from "../NavbarLinksContainer/NavbarLinksContainer";
+import NavbarLinksContainer from "./NavbarLinksContainer";
 import { Link } from "react-router-dom";
 
 const NavbarLinks = () => {
