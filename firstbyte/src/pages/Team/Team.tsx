@@ -28,7 +28,6 @@ const Team: React.FC<TeamProps> = ({
         animate={isAnimateNavbar}
         toggleIsAnimateNavbar={toggleIsAnimateNavbar}
       />
-
       <div className="pt-20">
         <Hero
           headingText={"Meet"}

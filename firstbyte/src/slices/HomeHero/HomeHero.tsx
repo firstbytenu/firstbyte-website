@@ -18,9 +18,9 @@ const HomeHero = () => {
             type: "spring",
             stiffness: 100, // Softer spring for smoother effect
           }}>
-          <div className="grid grid-rows-2 md:grid-cols-2 md:h-screen">
+          <div className="grid md:grid-cols-2 md:h-screen">
             <div className="text-[#546c54] text-center flex items-center justify-center">
-              <div className="grid grid-rows-4 md:grid-rows-3 mt-64">
+              <div className="grid grid-rows-4 md:grid-rows-2">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileFocus={{ scale: 1.05 }}
@@ -62,7 +62,7 @@ const HomeHero = () => {
                 stiffness: 100,
               }}
               className="flex items-center justify-center text-center md:h-screen">
-              <div className="grid grid-rows-2">
+              <div className="">
                 <motion.img
                   whileHover={{ scale: 1.05 }}
                   whileFocus={{ scale: 1.05 }}

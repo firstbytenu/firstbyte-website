@@ -29,7 +29,7 @@ const ProfileCardReverse: React.FC<ProfileCardReverseProps> = ({
         transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
         whileHover={{ scale: 1.01 }}
         whileFocus={{ scale: 1.01 }}
-        className="flex flex-col p-5 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 my-5">
+        className="flex flex-col p-5 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:md:w-1/2 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 my-5">
         <div className="flex flex-col justify-between p-4 leading-normal text-left">
           <p className="mb-3 font-medium text-gray-900 dark:text-gray-400 text-sm">
             {mission}

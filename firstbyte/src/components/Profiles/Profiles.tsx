@@ -11,32 +11,7 @@ const Profiles = () => {
   return (
     <>
       <Container>
-        <div className="hidden md:block">
-          {team.map((eachTeamMember, index) => {
-            return index & 1 ? (
-              <ProfileCardReverse
-                key={index}
-                image={eachTeamMember.image}
-                alt={eachTeamMember.name}
-                profileName={eachTeamMember.name}
-                position={eachTeamMember.position}
-                contact={eachTeamMember.email}
-                mission={eachTeamMember.whyFirstByte}
-              />
-            ) : (
-              <ProfileCard
-                key={index}
-                image={eachTeamMember.image}
-                alt={eachTeamMember.name}
-                profileName={eachTeamMember.name}
-                position={eachTeamMember.position}
-                contact={eachTeamMember.email}
-                mission={eachTeamMember.whyFirstByte}
-              />
-            );
-          })}
-        </div>
-        <div className="md:hidden">
+        <div className="flex flex-wrap justify-center gap-2">
           {team.map((eachTeamMember, index) => {
             return (
               <ProfileCard
