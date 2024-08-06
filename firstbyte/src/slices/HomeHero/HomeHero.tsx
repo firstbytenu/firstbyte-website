@@ -1,11 +1,13 @@
 /** @format */
 
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import Container from "../../components/Container/Container";
 import constants from "../../constants/constants";
+import Typewriter from "../../components/Typewriter/Typewriter";
 
 const HomeHero = () => {
+
   return (
     <>
       <Container>
@@ -34,14 +36,14 @@ const HomeHero = () => {
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 0.2 }}>
-                    <Typewriter
-                      options={{
-                        strings: [constants.tag],
-                        autoStart: true,
-                        loop: true,
-                      }}
-                    />
+                    transition={{ duration: 0.2 }}
+                  >
+                    <div className="lg:flex lg:items-center justify-center">
+                      <Typewriter
+                        defaultText={constants.tagConstant}
+                        texts={constants.tag}
+                      />
+                    </div>
                   </motion.div>
                 </div>
                 <motion.div

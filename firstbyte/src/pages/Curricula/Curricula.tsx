@@ -1,10 +1,11 @@
 /** @format */
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../slices/Navbar/Navbar";
 import Hero from "../../slices/Hero/Hero";
 import Footer from "../../slices/Footer/Footer";
 import CurriculaTeams from "../../slices/CurriculaTeams/CurriculaTeams";
+import FloatingButton from "../../components/FloatingButton/FloatingButton";
 
 type CurriculaProps = {
   isAnimateNavbar: unknown;
@@ -15,6 +16,18 @@ const Curricula: React.FC<CurriculaProps> = ({
   isAnimateNavbar,
   toggleIsAnimateNavbar,
 }) => {
+  const [showButton, setShowButton] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(false);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   useEffect(() => {
     document.title = "FirstByte - Curricula";
     return () => {
@@ -35,7 +48,8 @@ const Curricula: React.FC<CurriculaProps> = ({
           backText={""}>
           <CurriculaTeams />
         </Hero>
-      </div>
+        <FloatingButton onClick={() => {}} className={`transition-opacity duration-500 ${showButton ? 'lg:opacity-100' : 'opacity-0'}`} />
+        </div>
       <Footer />
     </>
   );
