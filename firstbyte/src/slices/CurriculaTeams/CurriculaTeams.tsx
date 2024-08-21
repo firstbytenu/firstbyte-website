@@ -1,40 +1,23 @@
 /** @format */
 
-import { useEffect } from "react";
 import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import Container from "../../components/Container/Container";
 import HeadingRichText from "../../components/HeadingRichText/HeadingRichText";
 import TeamCard from "../../components/Cards/TeamCard";
 import useGetCurricula from "../../hooks/useGetCurricula";
-import { motion } from "framer-motion";
+import { Curricula } from "../../hooks/useGetCurricula"
 
 const CurriculaTeams = () => {
-  const [curricula, setCurricula] = useGetCurricula();
-
-  useEffect(() => {
-    return () => {
-      setCurricula((curricula) => {
-        return [...[]];
-      });
-    };
-  }, []);
-
+  const [curricula] = useGetCurricula() as [Curricula[]];
   return (
     <>
       <Container>
-        {curricula.map((eachCurricula, index) => {
+        {curricula.map((eachCurricula: Curricula) => {
           return (
-            <motion.div
-              initial={{ x: 100 }}
-              animate={{ x: 0 }}
-              transition={{
-                duration: 0.1,
-                delay: 0.1 * index,
-                type: "spring",
-                stiffness: 200,
-              }}
+            <div
               key={eachCurricula.teamName}
-              className="mb-20">
+              className="mb-20"
+            >
               <HeadingRichText
                 text={""}
                 illuminateText={eachCurricula.teamName}
@@ -58,7 +41,7 @@ const CurriculaTeams = () => {
                   />
                 </div>
               </div>
-            </motion.div>
+            </div>
           );
         })}
       </Container>

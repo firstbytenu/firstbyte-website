@@ -1,6 +1,5 @@
 /** @format */
 
-import React from "react";
 import HorizontalCard from "../../components/Cards/HorizontalCard";
 import { motion } from "framer-motion";
 import HeadingRichText from "../../components/HeadingRichText/HeadingRichText";
@@ -35,7 +34,7 @@ const FactSlice = () => {
               key={eachFact.image}
               as="div"
               triggerOnce={false}
-              onChange={(inView, entry) => {}}>
+              onChange={() => {}}>
               {({ ref, inView }) => (
                 <motion.div
                   ref={ref}
@@ -47,7 +46,7 @@ const FactSlice = () => {
                     type: "spring",
                     stiffness: 200,
                   }}
-                  className="w-full sm:w-1 md:w-1/2 lg:w-1/3 xl:w-1/3 p-4">
+                  className="w-full md:w-1/2 lg:w-1/3 xl:w-1/3 p-4">
                   <HorizontalCard image={eachFact.image} text={eachFact.fact} />
                 </motion.div>
               )}

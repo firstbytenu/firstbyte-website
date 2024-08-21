@@ -4,28 +4,34 @@ import { useEffect, useState } from "react";
 import constants from "../constants/constants";
 import { useLocation } from "react-router-dom";
 
+export type LinkItem = {
+  title: string;
+  isActive: boolean;
+  link: string;
+};
+
 const useGetLinks = () => {
-  const [links, setLinks] = useState([]);
+  const [links, setLinks] = useState<LinkItem[]>([]);
   const location = useLocation();
 
   useEffect(() => {
-    setLinks((links) => {
+    setLinks(() => {
       return constants.navbarLinks;
     });
 
-    let currentLinks: Array<T> = constants.navbarLinks;
+    const currentLinks: Array<LinkItem> = constants.navbarLinks;
     for (let index = 0; index < currentLinks.length; index++) {
       currentLinks[index].isActive = false;
       if (currentLinks[index].link == location.pathname) {
         currentLinks[index].isActive = true;
       }
     }
-    setLinks((links) => {
+    setLinks(() => {
       return currentLinks;
     });
 
     return () => {
-      setLinks((links) => {
+      setLinks(() => {
         return [...[]];
       });
     };

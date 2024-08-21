@@ -7,8 +7,8 @@ import Footer from "../../slices/Footer/Footer";
 import CurriculaTeams from "../../slices/CurriculaTeams/CurriculaTeams";
 
 type CurriculaProps = {
-  isAnimateNavbar: unknown;
-  toggleIsAnimateNavbar: unknown;
+  isAnimateNavbar: boolean;
+  toggleIsAnimateNavbar: () => void;
 };
 
 const Curricula: React.FC<CurriculaProps> = ({

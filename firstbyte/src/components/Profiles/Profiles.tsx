@@ -20,7 +20,6 @@ const Profiles = () => {
                 alt={eachTeamMember.name}
                 profileName={eachTeamMember.name}
                 position={eachTeamMember.position}
-                contact={eachTeamMember.email}
                 mission={eachTeamMember.whyFirstByte}
               />
             ) : (
@@ -30,7 +29,6 @@ const Profiles = () => {
                 alt={eachTeamMember.name}
                 profileName={eachTeamMember.name}
                 position={eachTeamMember.position}
-                contact={eachTeamMember.email}
                 mission={eachTeamMember.whyFirstByte}
               />
             );
@@ -45,7 +43,6 @@ const Profiles = () => {
                 alt={eachTeamMember.name}
                 profileName={eachTeamMember.name}
                 position={eachTeamMember.position}
-                contact={eachTeamMember.email}
                 mission={eachTeamMember.whyFirstByte}
               />
             );

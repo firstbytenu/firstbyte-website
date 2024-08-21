@@ -5,8 +5,8 @@ import NavbarInternal from "../../components/Navbar/NavbarInternal";
 import { useEffect } from "react";
 
 type NavbarProps = {
-  animate: unknown;
-  toggleIsAnimateNavbar: unknown;
+  animate: boolean;
+  toggleIsAnimateNavbar: () => void;
 };
 
 const Navbar: React.FC<NavbarProps> = ({ animate, toggleIsAnimateNavbar }) => {

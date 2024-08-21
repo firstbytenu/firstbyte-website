@@ -1,21 +1,24 @@
 /** @format */
 
+import { Dispatch, SetStateAction } from "react";
 import useGetLinks from "../../hooks/useGetLinks";
 import NavbarLinksContainer from "./NavbarLinksContainer";
 import { Link } from "react-router-dom";
+import { LinkItem } from '../../hooks/useGetLinks';
 
 const NavbarLinks = () => {
-  const [links, setLinks] = useGetLinks();
+  const [links, setLinks] = useGetLinks() as [LinkItem[], Dispatch<SetStateAction<LinkItem[]>>];
 
-  const handleLinkChange = (e: unknown) => {
-    let currentLinks: Array<T> = links;
+  const handleLinkChange = (e: React.MouseEvent<HTMLElement>) => {
+    const currentLinks: Array<LinkItem> = links;
+    const clickedElement = e.currentTarget as HTMLElement;
     for (let index = 0; index < currentLinks.length; index++) {
       currentLinks[index].isActive = false;
-      if (currentLinks[index].title == e.target.innerText) {
+      if (currentLinks[index].title == clickedElement.innerText) {
         currentLinks[index].isActive = true;
       }
     }
-    setLinks((links) => {
+    setLinks(() => {
       return currentLinks;
     });
   };
