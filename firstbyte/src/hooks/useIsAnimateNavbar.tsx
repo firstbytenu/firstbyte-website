@@ -1,8 +1,8 @@
 /** @format */
 
-import React, { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
-const useIsAnimateNavbar = () => {
+const useIsAnimateNavbar = (): [boolean, () => void] => {
   const isAnimateNavbar = useRef(true);
 
   const toggleIsAnimateNavbar = () => {

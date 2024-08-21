@@ -8,7 +8,6 @@ type ProfileCardReverseProps = {
   alt: string;
   profileName: string;
   position: string;
-  contact: string;
   mission: string;
 };
 
@@ -17,7 +16,6 @@ const ProfileCardReverse: React.FC<ProfileCardReverseProps> = ({
   alt,
   profileName,
   position,
-  contact,
   mission,
 }) => {
   return (
@@ -43,11 +41,10 @@ const ProfileCardReverse: React.FC<ProfileCardReverseProps> = ({
             {position}
           </p>
           <p className="mb-3 font-light text-gray-500 dark:text-gray-400">
-            {contact}
           </p>
         </div>
         <img
-          className="w-32 h-32 mb-3 rounded-full shadow-lg mt-3 mx-5"
+          className="w-32 h-32 mb-3 rounded-full shadow-lg mt-3 mx-5 object-cover"
           src={image}
           alt={alt}
         />

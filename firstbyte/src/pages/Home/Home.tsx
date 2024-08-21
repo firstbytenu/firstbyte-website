@@ -7,8 +7,8 @@ import Footer from "../../slices/Footer/Footer";
 import FactSlice from "../../slices/FactSlice/FactSlice";
 
 type HomeProps = {
-  isAnimateNavbar: unknown;
-  toggleIsAnimateNavbar: unknown;
+  isAnimateNavbar: boolean;
+  toggleIsAnimateNavbar: () => void;
 };
 
 const Home: React.FC<HomeProps> = ({

@@ -7,8 +7,8 @@ import Footer from "../../slices/Footer/Footer";
 import Profiles from "../../components/Profiles/Profiles";
 
 type TeamProps = {
-  isAnimateNavbar: unknown;
-  toggleIsAnimateNavbar: unknown;
+  isAnimateNavbar: boolean;
+  toggleIsAnimateNavbar: () => void;
 };
 
 const Team: React.FC<TeamProps> = ({

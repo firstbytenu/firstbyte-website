@@ -1,6 +1,5 @@
 /** @format */
 
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -19,7 +18,7 @@ const Footer = () => {
             <li>
               <div className="me-4 md:me-6">Contact us:</div>
               <div className="me-4 md:me-6 font-bold">
-                teachfirstbyte@gmail.com
+                <a href="mailto:teachfirstbyte@gmail.com">teachfirstbyte@gmail.com</a>
               </div>
             </li>
           </ul>

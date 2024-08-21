@@ -3,14 +3,21 @@
 import { useEffect, useState } from "react";
 import constants from "../constants/constants";
 
+export type Curricula = {
+  teamName: string;
+  mission: string;
+  history: string;
+  images: string[];
+}
+
 const useGetCurricula = () => {
-  const [curricula, setCurricula] = useState(constants.curricula);
+  const [curricula, setCurricula] = useState(constants.curricula as Array<Curricula>);
   useEffect(() => {
-    setCurricula((curricula) => {
+    setCurricula(() => {
       return constants.curricula;
     });
     return () => {
-      setCurricula((curricula) => {
+      setCurricula(() => {
         return [...[]];
       });
     };

@@ -3,7 +3,6 @@
 import React, { Suspense } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "../../styles/css/Main/main.css";
-import Navbar from "../../slices/Navbar/Navbar";
 import useIsAnimateNavbar from "../../hooks/useIsAnimateNavbar";
 import Loader from "../../components/Loader/Loader";
 

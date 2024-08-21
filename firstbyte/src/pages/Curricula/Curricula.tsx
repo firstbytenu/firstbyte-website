@@ -8,8 +8,8 @@ import CurriculaTeams from "../../slices/CurriculaTeams/CurriculaTeams";
 import FloatingButton from "../../components/FloatingButton/FloatingButton";
 
 type CurriculaProps = {
-  isAnimateNavbar: unknown;
-  toggleIsAnimateNavbar: unknown;
+  isAnimateNavbar: boolean;
+  toggleIsAnimateNavbar: () => void;
 };
 
 const Curricula: React.FC<CurriculaProps> = ({

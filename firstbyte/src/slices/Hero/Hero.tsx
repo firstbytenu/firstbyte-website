@@ -5,7 +5,7 @@ import HeadingRichText from "../../components/HeadingRichText/HeadingRichText";
 import Container from "../../components/Container/Container";
 
 type HeroProps = {
-  children: any;
+  children: React.ReactNode;
   headingText: string;
   headingIlluminateText: string;
   backText: string;
@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({
             illuminateText={headingIlluminateText}
             backText={backText}
           />
-          {React.Children.map(children, (eachChild: ReactElement) => {
+          {React.Children.map(children as ReactElement | ReactElement[], (eachChild: ReactElement) => {
             return React.cloneElement(eachChild, {});
           })}
         </span>

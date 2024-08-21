@@ -2,14 +2,12 @@
 
 import React, { useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useInView } from "framer-motion";
 
 type ProfileCardProps = {
   image: string;
   alt: string;
   profileName: string;
   position: string;
-  contact: string;
   mission: string;
 };
 
@@ -18,11 +16,9 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   alt,
   profileName,
   position,
-  contact,
   mission,
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref);
 
   return (
     <AnimatePresence>
@@ -36,7 +32,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         whileFocus={{ scale: 1.01 }}
         className="flex flex-col p-5 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 my-5">
         <img
-          className="w-32 h-32 mb-3 rounded-full shadow-lg mt-3 mx-5"
+          className="w-32 h-32 mb-3 rounded-full object-cover shadow-lg mt-3 mx-5"
           src={image}
           alt={alt}
         />
@@ -48,7 +44,6 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
             {position}
           </p>
           <p className="mb-3 font-light text-gray-500 dark:text-gray-400">
-            {contact}
           </p>
         </div>
 
