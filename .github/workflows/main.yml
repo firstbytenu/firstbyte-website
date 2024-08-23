@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - deploy-workflow-v2
 
 jobs:
   build:
@@ -16,12 +16,17 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
+        with:
+          working-directory: firstbyte
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
+        with:
+          working-directory: firstbyte
 
       - name: Build project
-        run: cd firstbyte-website && npm run build
+        run: npm run build
+        working-directory: firstbyte
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
@@ -33,7 +38,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/deploy-workflow-v2'
 
     steps:
       - name: Download artifact
