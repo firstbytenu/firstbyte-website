@@ -16,17 +16,12 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
-        with:
-          working-directory: firstbyte
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-        with:
-          working-directory: firstbyte
+        run: cd firstbyte && npm install
 
       - name: Build project
-        run: npm run build
-        working-directory: firstbyte
+        run: cd firstbyte && npm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
