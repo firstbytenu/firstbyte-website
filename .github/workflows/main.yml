@@ -21,7 +21,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project
-        run: cd firstbyte-website && npm run build
+        run: cd firstbyte && npm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
