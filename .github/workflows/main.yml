@@ -1,50 +1,44 @@
 name: Deploy
-
 on:
   push:
     branches:
       - deploy-workflow-v2
-
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-
       - name: Setup Node
         uses: actions/setup-node@v3
-
+        with:
+          node-version: '16' # Specify the Node.js version to use
       - name: Install dependencies
-        run: cd firstbyte && npm i
-
+        run: npm i
+        working-directory: firstbyte
       - name: Build project
-        run: cd firstbyte && npm run build
-
+        run: npm run build
+        working-directory: firstbyte
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./dist
-
+          path: firstbyte/dist
   deploy:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/deploy-workflow-v2'
-
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: ./dist
-
+          path: firstbyte/dist
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages 
+          publish_dir: firstbyte/dist
+          publish_branch: gh-pages
