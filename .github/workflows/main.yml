@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - restructure
+      - deploy-workflow-v2
 
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/restructure'
+    if: github.ref == 'refs/heads/deploy-workflow-v2'
 
     steps:
       - name: Download artifact
