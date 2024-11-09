@@ -110,7 +110,7 @@ export default {
       images: ["NU1.png", "NU2.png"],
     },
     {
-      teamName: "Team Camp Harbor",
+      teamName: "Team Camp Harbor: CS Curricula",
       mission:
         "The Camp Harbor View Team’s purpose is to connect with students grade 9-12 and teach STEM related curriculum with a focus in Computer Science. We teach at CHV’s Leadership Academy in the South End, and sometimes have the kids come for workshops here at Northeastern University.",
       history:
@@ -118,7 +118,7 @@ export default {
       images: ["CH1.png", "CH2.png", "CH3.jpg"],
     },
     {
-      teamName: "Team St Stephen",
+      teamName: "Team St Stephen: STEM Curricula",
       mission:
         "Teach and develop STEM curriculum for elementary and middle school level students in the local Boston area.",
       history:
