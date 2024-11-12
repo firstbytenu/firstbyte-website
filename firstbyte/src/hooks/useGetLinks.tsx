@@ -35,7 +35,7 @@ const useGetLinks = () => {
         return [...[]];
       });
     };
-  }, []);
+  }, [location.pathname]);
 
   return [links, setLinks];
 };
