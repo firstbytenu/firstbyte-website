@@ -15,7 +15,7 @@ const Join = () => {
     );
     if (newWindow) newWindow.opener = null;
     navigate("/");
-  }, []);
+  }, [navigate]);
 
   return <></>;
 };
