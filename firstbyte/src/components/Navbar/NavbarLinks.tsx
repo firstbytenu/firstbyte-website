@@ -1,6 +1,6 @@
 /** @format */
 
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 import useGetLinks from "../../hooks/useGetLinks";
 import NavbarLinksContainer from "./NavbarLinksContainer";
 import { Link } from "react-router-dom";
