@@ -1,0 +1,1 @@
+import{a as r,r as t,c as s,j as o}from"./index-PY7RCf6-.js";const i=()=>{const n=r();return t.useEffect(()=>{const e=window.open(s.joinForm,"_blank","noopener,noreferrer");e&&(e.opener=null),n("/")},[n]),o.jsx(o.Fragment,{})};export{i as default};

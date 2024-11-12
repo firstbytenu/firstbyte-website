@@ -1,1 +1,0 @@
-import{a as r,r as t,c as s,j as e}from"./index-C6sOaStB.js";const i=()=>{const o=r();return t.useEffect(()=>{const n=window.open(s.joinForm,"_blank","noopener,noreferrer");n&&(n.opener=null),o("/")},[]),e.jsx(e.Fragment,{})};export{i as default};
