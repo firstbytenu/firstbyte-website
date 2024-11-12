@@ -1,5 +1,5 @@
 /** @format */
-
+import { useState } from "react";
 import NavbarLogo from "../Navbar/NavbarLogo";
 import NavbarStyledComponents from "../Navbar/NavbarStyledComponents";
 import navStyle from "../../slices/Navbar/NavStyles";
@@ -7,6 +7,11 @@ import NavbarLinks from "../Navbar/NavbarLinks";
 import constants from "../../constants/constants";
 
 const NavbarInternal = () => {
+  
+  const [isNavbarVisible, setNavbarVisible] = useState<boolean>(false);
+
+  const toggleNavbar = () => setNavbarVisible((prev) => !prev);
+
   return (
     <>
       <NavbarStyledComponents.Nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
@@ -31,6 +36,7 @@ const NavbarInternal = () => {
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
+              onClick={toggleNavbar}
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
               aria-expanded="false">
@@ -51,7 +57,7 @@ const NavbarInternal = () => {
               </svg>
             </button>
           </div>
-          <NavbarLinks />
+          <NavbarLinks isVisible={isNavbarVisible} />
         </NavbarStyledComponents.FullWidthNavbar>
       </NavbarStyledComponents.Nav>
     </>
