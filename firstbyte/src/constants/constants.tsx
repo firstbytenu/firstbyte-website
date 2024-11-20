@@ -129,15 +129,15 @@ export default {
   facts: [
     {
       image: "fact1.svg",
-      fact: "Only 18 states have created K-8 computer science standards. Momentum is building, but we still have a long way to go.",
+      fact: "FirstByte has assisted in promoting equity and inclusivity in STEM fields by providing resources for many schools in the Boston Area.",
     },
     {
       image: "fact2.svg",
-      fact: "Women who try computer science in high school are 10x more likely to major in it, and Black and Latinx students are 7x more likely.",
+      fact: "FirstByte has led numerous web development workshops for high schoolers, including HTML and CSS.",
     },
     {
       image: "fact3.svg",
-      fact: "Every 21st century student deserves the opportunity to learn about algorithms, how to make an app, or how the Internet works.",
+      fact: "Firstbyte has hosted STEM workshops for middle schoolers with experiments and engineering.",
     },
   ],
 };
