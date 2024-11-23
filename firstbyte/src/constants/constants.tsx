@@ -129,7 +129,7 @@ export default {
   facts: [
     {
       image: "fact1.svg",
-      fact: "FirstByte has assisted in promoting equity and inclusivity in STEM fields by providing resources for many schools in the Boston Area.",
+      fact: "FirstByte has assisted in promoting equity and inclusivity in STEM fields by providing resources for many schools around the Boston Area.",
     },
     {
       image: "fact2.svg",
