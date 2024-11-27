@@ -4,12 +4,12 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import constants from "../../constants/constants";
 
-const Join = () => {
+const LearnMore = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
     const newWindow = window.open(
-      constants.joinForm,
+      constants.linktree,
       "_blank",
       "noopener,noreferrer"
     );
@@ -20,4 +20,4 @@ const Join = () => {
   return <></>;
 };
 
-export default Join;
+export default LearnMore;

@@ -9,7 +9,7 @@ import Loader from "../../components/Loader/Loader";
 const Home = React.lazy(() => import("../Home/Home"));
 const Team = React.lazy(() => import("../Team/Team"));
 const Curricula = React.lazy(() => import("../Curricula/Curricula"));
-const Join = React.lazy(() => import("../Join/Join"));
+const LearnMore = React.lazy(() => import("../LearnMore/LearnMore"));
 
 const Router = () => {
   const [isAnimateNavbar, toggleIsAnimateNavbar] = useIsAnimateNavbar();
@@ -52,10 +52,10 @@ const Router = () => {
             }
           />
           <Route
-            path="/contact"
+            path="/learn-more"
             element={
-              <Suspense fallback={<Loader text={"Contact Page"} />}>
-                <Join />
+              <Suspense fallback={<Loader text={"Learn More"} />}>
+                <LearnMore />
               </Suspense>
             }
           />

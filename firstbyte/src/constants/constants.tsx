@@ -28,8 +28,8 @@ export default {
       isActive: false,
     },
     {
-      title: "Join Us",
-      link: "/contact",
+      title: "Learn More",
+      link: "/learn-more",
       isActive: false,
     },
   ],
@@ -98,8 +98,8 @@ export default {
       image: "anna.jpeg",
     },
   ],
-  joinForm:
-    "https://docs.google.com/forms/d/e/1FAIpQLSfgdHqfrIbdoDwoKo06yk677UNw07TpHJFL-hvNZ62cjojCpw/viewform",
+  linktree:
+    "https://linktr.ee/firstbyte",
   curricula: [
     {
       teamName: "Team Northeastern",
