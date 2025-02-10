@@ -57,10 +57,11 @@ export default {
     },
     {
       name: "Jaden Zhou",
-      whyFirstByte: "I am a 2nd year computer science major from Beverly, MA. I joined FirstByte because it makes STEM more fun and accessible, and great logo.",
+      whyFirstByte:
+        "I am a 2nd year computer science major from Beverly, MA. I joined FirstByte because it makes STEM more fun and accessible, and great logo.",
       position: "Treasurer",
       image: "jaden.jpg",
-      email: ""
+      email: "",
     },
     {
       name: "Jennifer Esfahany",
@@ -78,14 +79,16 @@ export default {
     },
     {
       name: "Meghana Nanda Kumar",
-      whyFirstByte: "I met FirstByte at Fall Fest in 2023 and I’ve been with them ever since. The club’s mission for teaching STEM resonated so much with me and I decided to let my design and front end development skills spread roots and grow here.",
+      whyFirstByte:
+        "I met FirstByte at Fall Fest in 2023 and I’ve been with them ever since. The club’s mission for teaching STEM resonated so much with me and I decided to let my design and front end development skills spread roots and grow here.",
       email: "",
       position: "Brand & Marketing",
       image: "meghana.jpg",
     },
     {
       name: "Ireh Hong",
-      whyFirstByte: "Firstbyte's focus on DEI, as well as their goal to contribute to other communities, is what drew me to join. Going into college, I really wanted to be a part of a tight knit community that eagerly used our skills to provide for others and firstbyte was exactly that!",
+      whyFirstByte:
+        "Firstbyte's focus on DEI, as well as their goal to contribute to other communities, is what drew me to join. Going into college, I really wanted to be a part of a tight knit community that eagerly used our skills to provide for others and firstbyte was exactly that!",
       email: "",
       position: "Software Events Lead",
       image: "ireh.jpg",
@@ -123,7 +126,7 @@ export default {
         "Teach and develop STEM curriculum for elementary and middle school level students in the local Boston area.",
       history:
         "We’ve led workshops for students teaching principles of engineering, running experiments, and sparking creativity while exploring scientific concepts. Some of our past lessons include: creating marshmallow spaghetti towers to understand how buildings and bridges are made, pinhole cameras to learn about light and optics, and making rubber band cars to explore potential and kinetic energy in physics.",
-      images: ["ST1.jpg", "ST2.jpg", "ST3.jpg"],
+      images: ["st1.jpg", "st2.jpg", "st3.jpg"],
     },
   ],
   facts: [
